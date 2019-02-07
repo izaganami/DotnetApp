@@ -1,0 +1,27 @@
+﻿@model ShopApp.Models.Type
+
+@{
+    ViewBag.Title = "Type - " + Model.Title;
+}
+<h2>@Model.Title</h2>
+<p>
+    <img alt="@Model.Title"
+         src="@Model.TypeArtUrl" />
+</p>
+<div id="type-details">
+    <p>
+        <em>Product:</em>
+        @Model.Product.Name
+    </p>
+    <p>
+        <em>Brand:</em>
+        @Model.Brand.Name
+    </p>
+    <p>
+        <em>Price:</em>
+        @String.Format("{0:F}",Model.Price)
+    </p>
+    <p class="button">
+        @Html.ActionLink("Add tocart", "AddToCart", "ShoppingCart", new { id = Model.TypeId }, "")
+    </p>
+</div>

@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ShopApp.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+@{
+    ViewBag.Title = "Store";
+}
+<h3>Browse Product</h3>
+<p>
+    Select from the @Model.Count()
+    Product:</p>
+
+<table class="table">
+    <thead class="black white-text">
+        <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Glimpse</th>
+
+        </tr>
+    </thead>
+@foreach (var Product in Model)
+{
+    <tr>
+        <td>
+            @Html.ActionLink(Product.Name,
+                "Browse", new {Product = Product.Name})
+        </td>
+        <td>
+            @{
+                var f = ".jpg";
+                var p = "/Content/Images/"+@Product.Name+f;
+                <img src="@p"/>
+            }
+        </td>
+    </tr>
+}
+</table>
+

@@ -1,0 +1,36 @@
+﻿@model ShopApp.Models.Product
+@{
+    ViewBag.Title = "Browse";
+}
+<h2>Browsing Product: @Model.Name</h2>
+
+<table class="table table-bordered table-hover" >
+    <thead class="black white-text">
+        <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Brand</th>
+            <th scope="col">Glimpse</th>
+
+        </tr>
+    </thead>
+    @foreach (var type in Model.Type)
+    {
+    <tr>
+        <td>
+            @Html.ActionLink(type.Title,
+                "Details", new { id = type.TypeId })
+        </td>
+        <td >
+            @Html.ActionLink(type.Brand.Name,
+                "Details", new { id = type.TypeId })
+        </td>
+        <td>
+            @{
+                var f = ".jpg";
+                var p = "/Content/Images/" + @type.Title + f;
+                <img src="@p" width="300" height="300"/>
+            }
+        </td>
+    </tr>
+    }
+</table>
