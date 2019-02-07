@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Full";
+}
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/Pict/JaBak.jpg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+</head>
+
+<body>
+
+    <h3>Le reserver est non-vide pour le moment</h3>
+
+    <div>
+        <h4>reserver disponible</h4>
+
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+
+    </div>
+
+</body>

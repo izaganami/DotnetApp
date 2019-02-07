@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "mesreservations";
+}
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/Pict/JaBak.jpg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+</head>
+
+<body>
+
+<h2 style="margin: 0 auto;transition: 2s;text-align: center" class="bounceInDown">Produits réservés</h2>
+    <br/>
+
+    <div class="container">
+
+        @if (Model != null)
+        {
+            <table class="table table-hover table-light table-active table-bordered">
+                <thead>
+                    <tr>
+                        @foreach (System.Data.DataColumn col in Model.Columns)
+                        {
+                            <th>@col.Caption</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                @{
+                    decimal sum = 0;}
+                @foreach (System.Data.DataRow row in Model.Rows)
+                {
+                    <tr>
+                        @foreach (var cell in row.ItemArray)
+                        {
+                            if (cell != null)
+                            {
+                                <td>@cell.ToString()</td>
+                                if (Decimal.TryParse(cell.ToString(),out decimal value))
+                                {
+                                    sum += Decimal.Parse(cell.ToString());
+                                }
+                            }
+                            else
+                            {
+                                <td></td>
+                            }
+                        }
+                    </tr>
+                }
+
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="2" style="text-align: center">Total</td>
+                    <td  >@sum</td>
+                </tr>
+                </tfoot>
+            </table>
+        }
+
+    </div>
+</body>

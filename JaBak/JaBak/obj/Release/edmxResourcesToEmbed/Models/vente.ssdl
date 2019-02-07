@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="venteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="acheter">
+    <Key>
+      <PropertyRef Name="id_achat" />
+    </Key>
+    <Property Name="id_achat" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_produit" Type="int" />
+    <Property Name="id_client" Type="nchar" MaxLength="36" />
+    <Property Name="libelle" Type="nchar" MaxLength="50" />
+    <Property Name="id_fournisseur" Type="varchar" MaxLength="36" />
+    <Property Name="catégorie" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="Prix" Type="float" />
+  </EntityType>
+  <EntityType Name="produit">
+    <Key>
+      <PropertyRef Name="id_produit" />
+    </Key>
+    <Property Name="id_produit" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="libelle" Type="varchar" MaxLength="50" />
+    <Property Name="catégorie" Type="varchar" MaxLength="50" />
+    <Property Name="prix" Type="float" />
+    <Property Name="quantité" Type="int" />
+    <Property Name="id_fournisseur" Type="varchar" MaxLength="36" />
+    <Property Name="PhotoFile" Type="varbinary(max)" />
+    <Property Name="ImageMimeType" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="reserver">
+    <Key>
+      <PropertyRef Name="id_reservation" />
+    </Key>
+    <Property Name="id_reservation" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_client" Type="varchar" MaxLength="36" />
+    <Property Name="id_produit" Type="int" />
+    <Property Name="id_fournisseur" Type="varchar" MaxLength="36" />
+    <Property Name="libelle" Type="nchar" MaxLength="50" />
+    <Property Name="catégorie" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="Prix" Type="float" />
+  </EntityType>
+  <EntityContainer Name="venteModelStoreContainer">
+    <EntitySet Name="acheter" EntityType="Self.acheter" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="produit" EntityType="Self.produit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="reserver" EntityType="Self.reserver" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

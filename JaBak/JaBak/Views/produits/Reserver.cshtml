@@ -1,0 +1,30 @@
+﻿@model JaBak.Models.reserver
+@{
+    ViewBag.Title = "Reserver";
+}
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/Pict/JaBak.jpg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+
+<body>
+
+    <h2 class="bounceInDown">Bienvenue au menu reservation</h2>
+    <div>
+        <h4 style="font-family: cursive">Cliquez pour confirmer</h4>
+        <hr />
+        <dl class="dl-horizontal"></dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Reserver" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+</body>

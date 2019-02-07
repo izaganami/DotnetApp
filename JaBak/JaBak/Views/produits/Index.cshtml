@@ -1,0 +1,92 @@
+﻿@model IEnumerable<JaBak.Models.produit>
+
+@{
+    ViewBag.Title = "Index";
+}
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/Pict/JaBak.jpg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <table class="table table-active table-bordered table-striped table-hover table-dark">
+        <tr>
+            <th>
+                Illustration
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Type
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.prix) (DH)
+            </th>
+            <th>
+                Quantite en reserver
+            </th>
+
+            <th>
+                Action
+            </th>
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @if (item.PhotoFile != null)
+                    {
+                        <img width="200" src="@Url.Action("GetImage", new { id=item.id_produit })" height="200" />
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.libelle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.catégorie)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.prix)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.quantité)
+                </td>
+
+
+
+                <td>
+                    @using Microsoft.AspNet.Identity
+                    @if (User.Identity.GetUserId().Equals(item.id_fournisseur))
+                    {
+                        @Html.ActionLink("Supprimer", "Delete", new { id = item.id_produit })
+
+
+                    }
+                    @if (User.IsInRole("client"))
+                    {
+                        @Html.ActionLink("Acheter", "Acheter", new { id = item.id_produit })
+                        <span> | </span>
+                        @Html.ActionLink("reserver", "reserver", new { id = item.id_produit })
+                    }
+
+
+                </td>
+            </tr>
+
+        }
+
+    </table>
+    @if (!User.IsInRole("client"))
+    {
+        <button style="text-align: center;align-self: center">
+            @Html.ActionLink("Ajouter un produit au reserver", "Create")
+        </button>
+    }
+</body>

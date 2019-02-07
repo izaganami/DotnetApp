@@ -1,0 +1,61 @@
+﻿@model JaBak.Models.produit
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/Pict/JaBak.jpg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <h2>Details</h2>
+
+    <div>
+        <h4>produit</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.libelle)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.libelle)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.catégorie)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.catégorie)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.prix)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.prix)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.quantité)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.quantité)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.id_produit }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+    </body>

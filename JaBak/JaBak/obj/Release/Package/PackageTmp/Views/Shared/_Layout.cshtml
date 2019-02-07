@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+<head>
+
+    <style>
+        .container-fluid {
+            background-color: dimgray;
+        }
+
+        
+
+        .navbar-nav > ul {
+            padding-left: 0.5%;
+            padding-right: 0.5%;
+            padding-bottom: 10px;
+        }
+
+        .hide-me[aria-expanded="true"] {
+            display: none;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .navbar {
+            height: 50px;
+        }
+
+        #thisc {
+            padding-top: 10px;
+            width: 100%;
+            max-width: 3000px;
+            padding-bottom: 10px;
+        }
+
+        ul li {
+           
+            padding: 13px;
+           
+        }
+
+        ul {
+            white-space: nowrap;
+            display: contents;
+        }
+
+        .dropdown-menu li ul {
+            position: relative;
+        }
+
+        .nav {
+        }
+
+        li > a {
+            padding: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 60px;
+        }
+
+        li a {
+            display: block;
+        }
+
+        #myNavbar.collapse:not(.show) {
+           display: none;
+           background-color: none;
+           
+        }
+        #myNavbar.show
+        {
+            display: grid;
+            background-color: black;
+        }
+        @@media only screen and (max-width: 400px) 
+        {
+            #myNavbar:not(.show) {
+                
+            }
+}
+        #logoutForm
+        {
+            display: contents;
+        }
+        /* Style The Dropdown Button */
+        .dropbtn1 {
+            background-color: none;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown1 {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content1 {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        #browse 
+        {
+            padding: 3px 3px;
+        }
+
+            /* Links inside the dropdown */
+            .dropdown-content1 a 
+            {
+                color: black;
+                padding: 3px 3px;
+                text-decoration: none;
+                display: grid;
+            }
+
+            /* Change color of dropdown links on hover */
+            .dropdown-content1 a:hover
+            {
+                color: gold;
+            }
+
+        /* Show the dropdown menu on hover */
+        .dropdown1:hover .dropdown-content1
+        {
+            display: block;
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown1:hover .dropbtn1 {
+            background-color: goldenrod;
+        }
+        #hov:hover
+        {
+            
+            background-color:goldenrod;
+            text-decoration: none;
+        }
+        i.arrow {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+
+        .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+
+        .left {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+
+        .up {
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }
+
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+        .dropdown1 > li ul a 
+        {
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+        link:hover{
+            text-decoration: none;
+        }
+
+    </style>
+    <title>JaBak</title>
+    <meta charset="utf-8">
+    <script src="~/Scripts/jquery-3.3.1.slim.min.js"></script>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/animate.css" />
+    <link rel="icon" href="~/Pict/JaBak.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+   
+    <script src="/Scripts/umd/popper.min.js" ></script>
+    <script src="/Scripts/bootstrap.min.js" ></script>
+
+</head>
+
+<body>
+
+
+<nav  class="navbar navbar-fixed-top navbar-default navbar-inverse navbar-dark bg-dark navbar-expand-lg" style="margin: 0px;z-index: 2;height: 46px">
+    <div  id="thisc" style="display: contents">
+        <ul class="navbar-header">
+            @Html.ActionLink("JaBak", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <li class="nav-item dropdown1">
+                <button class="navbar-toggler dropbtn1" data-toggle="collapse" href="#myNavbar" type="button" aria-expanded="false" aria-controls="myNavbar">
+                    <span class="icon-bar navbar-toggler-icon"></span>
+                </button>
+            </li>
+        </ul>
+        
+        <div class="collapse navbar-collapse" id="myNavbar" style="background-color: none;">
+            <ul class="nav navbar-nav" style="display: contents" id="navul">
+                @Html.Partial("_LoginPartial")
+
+                <li id="hov">@Html.ActionLink("Produits", "Index", "produits")</li>
+                
+            @if (User.IsInRole("fournisseur"))
+            {
+                <li class="dropdown1" style="color: #007bff">
+                    <a style="padding-left: 3px" class="dropbtn1">Stats&nbsp;<i class="arrow down"></i>
+                    </a>
+                    <ul class="dropdown-content1">
+                        <li id="hov">@Html.ActionLink("Réservations", "Getclientsreserver", "Home")</li>
+                        <li id="hov">@Html.ActionLink("Achats", "Getclientsacheter", "Home")</li>
+                    </ul>
+                </li>
+            }
+            @if (!User.IsInRole("fournisseur"))
+            {
+                <li class="dropdown1" style="color: #007bff">
+                    <a style="padding-left: 3px" class="dropbtn1">Chariot&nbsp;<i class="arrow down"></i></a>
+                    <ul class="dropdown-content1">
+                        <li id="hov">@Html.ActionLink("Panier", "monpanier", "Home")</li>
+                        <li id="hov">@Html.ActionLink("Réservations", "mesreservations", "Home")</li>
+                    </ul>
+                </li>
+            }
+                <li style="padding: 0" class="nav-item dropdown1">
+                    <a class="nav-link  dropbtn1" id="browse " style="padding-left: 3px;padding-top: 2px;padding-bottom: 13px;height: 29px;">Browse&nbsp; <i class="arrow down"></i></a>
+                    
+                    <ul class=" dropdown-content1">
+                        <li id="hov" class="dropdown-item">@Html.ActionLink("Accueil", "Index", "Home")</li>
+                        <li id="hov" class="dropdown-item">@Html.ActionLink("À propos de", "About", "Home")</li>
+                        <li id="hov" class="dropdown-item">@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                </li>
+
+            </ul>
+           
+        </div>
+    </div>
+</nav>
+
+
+<div  style="width: 100%;padding: 0;position: relative;z-index: 0"  >
+    @RenderBody()
+    <hr/>
+    
+</div>
+<br/>
+
+
+@Scripts.Render("/bundles/jquery")
+@Scripts.Render("/bundles/bootstrap")
+@RenderSection("scripts", required: false)
+<footer class="page-footer card-footer" style="background-color: dimgray ">
+    <img src="/Pict/JaBak.jpg" width="100" height="100" />&nbsp;&nbsp;&nbsp;&nbsp;
+    <p style="display: contents" class="page-footer"> @DateTime.Now.Year -Our shop is copyrighted to: <a href="/Home/Index"></a>&copy;JaBak  ----  @Html.ActionLink("Contact", "Contact", "Home")</p>
+    
+</footer>
+</body>
+
+
+
+
+
+
+</html>

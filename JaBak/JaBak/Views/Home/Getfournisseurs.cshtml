@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "Getfournisseurs";
+    int c1 = 0;
+    int c2 = 0;
+}
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/Pict/JaBak.jpg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+<body>
+    <h2>Listes des fournisseurs</h2>
+
+    <div class="container">
+        @if (Model != null)
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>produits</th>
+                        @foreach (System.Data.DataColumn col in Model.Columns)
+                        {
+                            if (c2 != 0)
+                            {
+                                <th>@col.Caption</th>
+                            }
+                            c2++;
+                        }
+
+                </thead>
+                <tbody>
+                    @foreach (System.Data.DataRow row in Model.Rows)
+                    {
+                        <tr>
+                            @foreach (var cell in row.ItemArray)
+                            {
+                                if (c1 == 0)
+                                {
+                                    <th>
+                                        @Html.ActionLink("produits", "Getproducts", new { id = cell })
+                                    </th>
+                                }
+                                if (cell != null)
+                                {
+
+                                    if (c1 != 0)
+                                    {
+                                        <td>@cell.ToString()</td>
+                                    }
+                                }
+                                else
+                                {
+                                    <td></td>
+                                }
+                                c1++;
+                            }
+
+                        </tr>
+                        c1 = 0;
+                    }
+
+
+                </tbody>
+            </table>
+        }
+
+    </div>
+</body>

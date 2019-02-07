@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Empty";
+}
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/Pict/JaBak.jpg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+
+<body>
+
+<h2>Les articles ne sont plus disponibles</h2>
+<h3>Veuillez les reservez en attendant</h3>
+
+
+    <div>
+        <h5 style="font-family: fantasy">Revenez a la liste</h5>
+
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+
+    </div>
+</body>

@@ -1,0 +1,36 @@
+﻿@model JaBak.Models.acheter
+@{
+    ViewBag.Title = "Acheter";
+}
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/Pict/JaBak.jpg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+
+<h3 style="font: italic;">Veuillez Confirmer votre choix</h3>
+<br/>
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal"></dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions " >
+            <input type="submit" value="Ajouter au panier" class="btn btn-default btn-dark" /> 
+            <br/>
+            <br/>
+            <button class="btn-success badge-light">@Html.ActionLink("Annuler", "Index")</button>
+        </div>
+    }
+</div>
+</body>

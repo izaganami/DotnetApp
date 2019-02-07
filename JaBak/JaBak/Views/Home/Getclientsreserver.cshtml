@@ -1,0 +1,83 @@
+﻿@model System.Data.DataTable
+@{
+    ViewBag.Title = "Getclientsreserver";
+    Layout = "/Views/Shared/_Layout.cshtml";
+    int c1 = 0;
+    int c2 = 0;
+}
+
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/Pict/JaBak.jpg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <br/>
+<h2 style="text-align: center;font: italic;">Liste des clients qui ont réservé:</h2>
+    <br/>
+<div class="container">
+
+    @if (Model != null)
+    {
+        <table class="table table-active table-bordered table-striped table-dark text-center">
+            <thead>
+                <tr>
+                <th>About</th>
+                    @foreach (System.Data.DataColumn col in Model.Columns)
+                    {
+                        if (c2 != 0)
+                        {
+                            if (col.Caption.Equals("libelle"))
+                            {
+                                <th>Description</th>
+                            }
+                            else {<th>@col.Caption</th> }
+                            
+                        }
+                        c2++;
+                    }
+                    
+
+</thead>
+            <tbody>
+                @foreach (System.Data.DataRow row in Model.Rows)
+                {
+                    <tr>
+                        @foreach (var cell in row.ItemArray)
+                        {
+                            if (c1 == 0)
+                            {
+                                <th>
+                                    @Html.ActionLink("Details", "Getinfos", new { id = cell })
+                                </th>
+                            }
+                            if (cell != null)
+                            {
+
+                                if (c1 != 0)
+                                {
+                                    <td>@cell.ToString()</td>
+                                }
+                            }
+                            else
+                            {
+                                <td></td>
+                            }
+                            c1++;
+                        }
+
+                    </tr>
+                    c1 = 0;
+                }
+
+
+            </tbody>
+        </table>
+    }
+
+</div>
+
+</body>

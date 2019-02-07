@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="venteModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="venteEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="acheter" EntityType="venteModel.acheter" />
+    <EntitySet Name="reserver" EntityType="venteModel.reserver" />
+    <EntitySet Name="produit" EntityType="venteModel.produit" />
+  </EntityContainer>
+  <EntityType Name="acheter">
+    <Key>
+      <PropertyRef Name="id_achat" />
+    </Key>
+    <Property Name="id_achat" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_produit" Type="Int32" />
+    <Property Name="id_client" Type="String" MaxLength="36" FixedLength="true" Unicode="true" />
+    <Property Name="libelle" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="id_fournisseur" Type="String" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Name="catégorie" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Prix" Type="Double" />
+  </EntityType>
+  <EntityType Name="reserver">
+    <Key>
+      <PropertyRef Name="id_reservation" />
+    </Key>
+    <Property Name="id_reservation" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_client" Type="String" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Name="id_produit" Type="Int32" />
+    <Property Name="id_fournisseur" Type="String" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Name="libelle" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="catégorie" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Prix" Type="Double" />
+  </EntityType>
+  <EntityType Name="produit">
+    <Key>
+      <PropertyRef Name="id_produit" />
+    </Key>
+    <Property Name="id_produit" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="catégorie" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="prix" Type="Double" />
+    <Property Name="quantité" Type="Int32" />
+    <Property Name="id_fournisseur" Type="String" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Name="PhotoFile" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ImageMimeType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

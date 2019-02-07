@@ -1,0 +1,29 @@
+﻿<style>
+    #logoutForm
+    {
+        display: contents;
+    }
+</style>
+@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+    @Html.AntiForgeryToken()
+
+
+    
+        <li id="hov">
+            @Html.ActionLink("Bonjour " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+        </li>
+        <li id="hov"><a href="javascript:document.getElementById('logoutForm').submit()">Quitter</a></li>
+    
+    }
+}
+else
+{
+    
+        <li id="hov">@Html.ActionLink("S’inscrire", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        <li id="hov">@Html.ActionLink("Se connecter", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    
+}

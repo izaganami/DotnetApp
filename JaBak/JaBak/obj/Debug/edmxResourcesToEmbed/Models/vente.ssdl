@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="venteModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="venteModelStoreContainer">
+    <EntitySet Name="acheter" EntityType="venteModel.Store.acheter" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="reserver" EntityType="venteModel.Store.reserver" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="produit" EntityType="venteModel.Store.produit" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="acheter">
+    <Key>
+      <PropertyRef Name="id_achat" />
+    </Key>
+    <Property Name="id_achat" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_produit" Type="int" Nullable="true" />
+    <Property Name="id_client" Type="nchar" Nullable="true" MaxLength="36" />
+    <Property Name="libelle" Type="nchar" Nullable="true" MaxLength="50" />
+    <Property Name="id_fournisseur" Type="varchar" Nullable="true" MaxLength="36" />
+    <Property Name="catégorie" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" Nullable="true" MaxLength="256" />
+    <Property Name="Prix" Type="float" Nullable="true" />
+  </EntityType>
+  <EntityType Name="reserver">
+    <Key>
+      <PropertyRef Name="id_reservation" />
+    </Key>
+    <Property Name="id_reservation" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_client" Type="varchar" Nullable="true" MaxLength="36" />
+    <Property Name="id_produit" Type="int" Nullable="true" />
+    <Property Name="id_fournisseur" Type="varchar" Nullable="true" MaxLength="36" />
+    <Property Name="libelle" Type="nchar" Nullable="true" MaxLength="50" />
+    <Property Name="catégorie" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" Nullable="true" MaxLength="256" />
+    <Property Name="Prix" Type="float" Nullable="true" />
+  </EntityType>
+  <EntityType Name="produit">
+    <Key>
+      <PropertyRef Name="id_produit" />
+    </Key>
+    <Property Name="id_produit" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="libelle" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="catégorie" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="prix" Type="float" Nullable="true" />
+    <Property Name="quantité" Type="int" Nullable="true" />
+    <Property Name="id_fournisseur" Type="varchar" Nullable="true" MaxLength="36" />
+    <Property Name="PhotoFile" Type="varbinary(max)" Nullable="true" />
+    <Property Name="ImageMimeType" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+</Schema>

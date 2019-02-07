@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="venteModelStoreContainer" CdmEntityContainer="venteEntities">
+    <EntitySetMapping Name="acheter">
+      <EntityTypeMapping TypeName="venteModel.acheter">
+        <MappingFragment StoreEntitySet="acheter">
+          <ScalarProperty Name="Prix" ColumnName="Prix" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="catégorie" ColumnName="catégorie" />
+          <ScalarProperty Name="id_fournisseur" ColumnName="id_fournisseur" />
+          <ScalarProperty Name="libelle" ColumnName="libelle" />
+          <ScalarProperty Name="id_client" ColumnName="id_client" />
+          <ScalarProperty Name="id_produit" ColumnName="id_produit" />
+          <ScalarProperty Name="id_achat" ColumnName="id_achat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="reserver">
+      <EntityTypeMapping TypeName="venteModel.reserver">
+        <MappingFragment StoreEntitySet="reserver">
+          <ScalarProperty Name="Prix" ColumnName="Prix" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="catégorie" ColumnName="catégorie" />
+          <ScalarProperty Name="libelle" ColumnName="libelle" />
+          <ScalarProperty Name="id_fournisseur" ColumnName="id_fournisseur" />
+          <ScalarProperty Name="id_produit" ColumnName="id_produit" />
+          <ScalarProperty Name="id_client" ColumnName="id_client" />
+          <ScalarProperty Name="id_reservation" ColumnName="id_reservation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="produit">
+      <EntityTypeMapping TypeName="venteModel.produit">
+        <MappingFragment StoreEntitySet="produit">
+          <ScalarProperty Name="ImageMimeType" ColumnName="ImageMimeType" />
+          <ScalarProperty Name="PhotoFile" ColumnName="PhotoFile" />
+          <ScalarProperty Name="id_fournisseur" ColumnName="id_fournisseur" />
+          <ScalarProperty Name="quantité" ColumnName="quantité" />
+          <ScalarProperty Name="prix" ColumnName="prix" />
+          <ScalarProperty Name="catégorie" ColumnName="catégorie" />
+          <ScalarProperty Name="libelle" ColumnName="libelle" />
+          <ScalarProperty Name="id_produit" ColumnName="id_produit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

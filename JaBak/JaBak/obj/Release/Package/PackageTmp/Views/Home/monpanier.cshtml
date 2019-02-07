@@ -1,0 +1,79 @@
+﻿@using System.Data.Entity
+
+@{
+    ViewBag.Title = "monpanier";
+}
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/Pict/JaBak.jpg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+<br/>
+<br/>
+<h2 style="text-align: center;font-family: sans-serif;font: italic" class="bounceInDown">Objets en panier:</h2>
+<br/>
+
+<div class="container">
+
+    @if (Model != null)
+    {
+        <table class="table table-bordered table-active table-striped table-hover table-light" style="border: black">
+            <thead>
+            <tr>
+                @foreach (System.Data.DataColumn col in Model.Columns)
+                {
+                    <th>@col.Caption</th>
+                }
+            </tr>
+            </thead>
+            <tbody>
+            @{
+                decimal sum = 0;}
+            @foreach (System.Data.DataRow row in Model.Rows)
+            {
+                <tr>
+                    @foreach (var cell in row.ItemArray)
+                    {
+                        if (cell != null)
+                        {
+                            <td>@cell.ToString()</td>
+                            if (Decimal.TryParse(cell.ToString(),out decimal value))
+                            {
+                                sum += Decimal.Parse(cell.ToString());
+                            }
+
+
+                        }
+                            
+                        else
+                        {
+                            <td></td>
+                        }
+                    }
+                </tr>
+            }
+
+
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="2" style="text-align: center">Total</td>
+                <td  >@sum</td>
+            </tr>
+            </tfoot>
+        </table>
+        <input id='btnRedirect' type="button" value="Confirmer l'achat" />
+    }
+
+</div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#btnRedirect').click(function (e) {
+            window.location.href = '@Url.Content("/Paiement/paiement")';
+        });
+    });
+</script>

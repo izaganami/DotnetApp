@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="shopModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="shopModelStoreContainer">
+    <EntitySet Name="acheter" EntityType="shopModel.Store.acheter" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="reserver" EntityType="shopModel.Store.reserver" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="produit" EntityType="shopModel.Store.produit" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="acheter">
+    <Key>
+      <PropertyRef Name="id_achat" />
+    </Key>
+    <Property Name="id_achat" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_produit" Type="int" Nullable="true" />
+    <Property Name="id_client" Type="nchar" Nullable="true" MaxLength="36" />
+    <Property Name="libelle" Type="nchar" Nullable="true" MaxLength="50" />
+    <Property Name="id_fournisseur" Type="varchar" Nullable="true" MaxLength="36" />
+    <Property Name="catégorie" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" Nullable="true" MaxLength="256" />
+    <Property Name="Prix" Type="float" Nullable="true" />
+  </EntityType>
+  <EntityType Name="reserver">
+    <Key>
+      <PropertyRef Name="id_reservation" />
+    </Key>
+    <Property Name="id_reservation" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_client" Type="varchar" Nullable="true" MaxLength="36" />
+    <Property Name="id_produit" Type="int" Nullable="true" />
+    <Property Name="id_fournisseur" Type="varchar" Nullable="true" MaxLength="36" />
+    <Property Name="libelle" Type="nchar" Nullable="true" MaxLength="50" />
+    <Property Name="catégorie" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" Nullable="true" MaxLength="256" />
+    <Property Name="Prix" Type="float" Nullable="true" />
+  </EntityType>
+  <EntityType Name="produit">
+    <Key>
+      <PropertyRef Name="id_produit" />
+    </Key>
+    <Property Name="id_produit" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="libelle" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="catégorie" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="prix" Type="float" Nullable="true" />
+    <Property Name="quantité" Type="int" Nullable="true" />
+    <Property Name="id_fournisseur" Type="varchar" Nullable="true" MaxLength="36" />
+    <Property Name="PhotoFile" Type="varbinary(max)" Nullable="true" />
+    <Property Name="ImageMimeType" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="shopModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="shopEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="acheter" EntityType="shopModel.acheter" />
+          <EntitySet Name="reserver" EntityType="shopModel.reserver" />
+          <EntitySet Name="produit" EntityType="shopModel.produit" />
+        </EntityContainer>
+        <EntityType Name="acheter">
+          <Key>
+            <PropertyRef Name="id_achat" />
+          </Key>
+          <Property Name="id_achat" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_produit" Type="Int32" />
+          <Property Name="id_client" Type="String" MaxLength="36" FixedLength="true" Unicode="true" />
+          <Property Name="libelle" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="id_fournisseur" Type="String" MaxLength="36" FixedLength="false" Unicode="false" />
+          <Property Name="catégorie" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="Prix" Type="Double" />
+        </EntityType>
+        <EntityType Name="reserver">
+          <Key>
+            <PropertyRef Name="id_reservation" />
+          </Key>
+          <Property Name="id_reservation" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_client" Type="String" MaxLength="36" FixedLength="false" Unicode="false" />
+          <Property Name="id_produit" Type="Int32" />
+          <Property Name="id_fournisseur" Type="String" MaxLength="36" FixedLength="false" Unicode="false" />
+          <Property Name="libelle" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="catégorie" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="Prix" Type="Double" />
+        </EntityType>
+        <EntityType Name="produit">
+          <Key>
+            <PropertyRef Name="id_produit" />
+          </Key>
+          <Property Name="id_produit" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="catégorie" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="prix" Type="Double" />
+          <Property Name="quantité" Type="Int32" />
+          <Property Name="id_fournisseur" Type="String" MaxLength="36" FixedLength="false" Unicode="false" />
+          <Property Name="PhotoFile" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="ImageMimeType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="shopModelStoreContainer" CdmEntityContainer="shopEntities">
+    <EntitySetMapping Name="acheter">
+      <EntityTypeMapping TypeName="IsTypeOf(shopModel.acheter)">
+        <MappingFragment StoreEntitySet="acheter">
+          <ScalarProperty Name="id_achat" ColumnName="id_achat" />
+          <ScalarProperty Name="id_produit" ColumnName="id_produit" />
+          <ScalarProperty Name="id_client" ColumnName="id_client" />
+          <ScalarProperty Name="libelle" ColumnName="libelle" />
+          <ScalarProperty Name="id_fournisseur" ColumnName="id_fournisseur" />
+          <ScalarProperty Name="catégorie" ColumnName="catégorie" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Prix" ColumnName="Prix" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="reserver">
+      <EntityTypeMapping TypeName="IsTypeOf(shopModel.reserver)">
+        <MappingFragment StoreEntitySet="reserver">
+          <ScalarProperty Name="id_reservation" ColumnName="id_reservation" />
+          <ScalarProperty Name="id_client" ColumnName="id_client" />
+          <ScalarProperty Name="id_produit" ColumnName="id_produit" />
+          <ScalarProperty Name="id_fournisseur" ColumnName="id_fournisseur" />
+          <ScalarProperty Name="libelle" ColumnName="libelle" />
+          <ScalarProperty Name="catégorie" ColumnName="catégorie" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Prix" ColumnName="Prix" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="produit">
+      <EntityTypeMapping TypeName="IsTypeOf(shopModel.produit)">
+        <MappingFragment StoreEntitySet="produit">
+          <ScalarProperty Name="id_produit" ColumnName="id_produit" />
+          <ScalarProperty Name="libelle" ColumnName="libelle" />
+          <ScalarProperty Name="catégorie" ColumnName="catégorie" />
+          <ScalarProperty Name="prix" ColumnName="prix" />
+          <ScalarProperty Name="quantité" ColumnName="quantité" />
+          <ScalarProperty Name="id_fournisseur" ColumnName="id_fournisseur" />
+          <ScalarProperty Name="PhotoFile" ColumnName="PhotoFile" />
+          <ScalarProperty Name="ImageMimeType" ColumnName="ImageMimeType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Aucun" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,186 @@
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\ApplicationInsights.config
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\projetdotnet.dll.config
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\projetdotnet.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\projetdotnet.pdb
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Antlr3.Runtime.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\EntityFramework.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\EntityFramework.SqlServer.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.AI.Web.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.Owin.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Newtonsoft.Json.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Owin.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\System.Web.Helpers.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\System.Web.Mvc.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\System.Web.Optimization.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\System.Web.Razor.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\System.Web.WebPages.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\System.Web.WebPages.Razor.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\WebGrease.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\System.Web.Helpers.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\System.Web.Mvc.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\System.Web.Optimization.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\System.Web.Razor.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\System.Web.WebPages.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\System.Web.WebPages.Razor.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Antlr3.Runtime.pdb
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Newtonsoft.Json.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\EntityFramework.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\EntityFramework.SqlServer.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.Owin.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\Microsoft.AI.Web.xml
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\fr\System.Web.Optimization.resources.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\fr\System.Web.Razor.resources.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\fr\EntityFramework.resources.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\fr\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\fr\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\fr\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\fr\Microsoft.Owin.resources.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\fr\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\fr\Microsoft.Owin.Security.resources.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\fr\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\fr\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\fr\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\bin\fr\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\obj\Release\projetdotnet.csprojResolveAssemblyReference.cache
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\obj\Release\projetdotnet.Migrations.InitialCreate.resources
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\obj\Release\projetdotnet.Migrations.Initial.resources
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\obj\Release\projetdotnet.csproj.GenerateResource.Cache
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\obj\Release\projetdotnet.csproj.CoreCompileInputs.cache
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\obj\Release\projetdotnet.dll
+C:\Users\Led Info\source\repos\projetdotnet\projetdotnet\obj\Release\projetdotnet.pdb
+E:\projetdotnet\projetdotnet\bin\ApplicationInsights.config
+E:\projetdotnet\projetdotnet\bin\projetdotnet.dll.config
+E:\projetdotnet\projetdotnet\bin\projetdotnet.dll
+E:\projetdotnet\projetdotnet\bin\projetdotnet.pdb
+E:\projetdotnet\projetdotnet\bin\Antlr3.Runtime.dll
+E:\projetdotnet\projetdotnet\bin\EntityFramework.dll
+E:\projetdotnet\projetdotnet\bin\EntityFramework.SqlServer.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.AI.Agent.Intercept.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.AI.DependencyCollector.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.AI.Web.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.AI.WindowsServer.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.ApplicationInsights.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.AspNet.Identity.Core.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.Owin.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.Cookies.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.Facebook.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.Google.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.OAuth.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.Twitter.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.Web.Infrastructure.dll
+E:\projetdotnet\projetdotnet\bin\Newtonsoft.Json.dll
+E:\projetdotnet\projetdotnet\bin\Owin.dll
+E:\projetdotnet\projetdotnet\bin\System.Web.Helpers.dll
+E:\projetdotnet\projetdotnet\bin\System.Web.Mvc.dll
+E:\projetdotnet\projetdotnet\bin\System.Web.Optimization.dll
+E:\projetdotnet\projetdotnet\bin\System.Web.Razor.dll
+E:\projetdotnet\projetdotnet\bin\System.Web.WebPages.Deployment.dll
+E:\projetdotnet\projetdotnet\bin\System.Web.WebPages.dll
+E:\projetdotnet\projetdotnet\bin\System.Web.WebPages.Razor.dll
+E:\projetdotnet\projetdotnet\bin\WebGrease.dll
+E:\projetdotnet\projetdotnet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\projetdotnet\projetdotnet\bin\System.Web.Helpers.xml
+E:\projetdotnet\projetdotnet\bin\System.Web.Mvc.xml
+E:\projetdotnet\projetdotnet\bin\System.Web.Optimization.xml
+E:\projetdotnet\projetdotnet\bin\System.Web.Razor.xml
+E:\projetdotnet\projetdotnet\bin\System.Web.WebPages.xml
+E:\projetdotnet\projetdotnet\bin\System.Web.WebPages.Deployment.xml
+E:\projetdotnet\projetdotnet\bin\System.Web.WebPages.Razor.xml
+E:\projetdotnet\projetdotnet\bin\Antlr3.Runtime.pdb
+E:\projetdotnet\projetdotnet\bin\Newtonsoft.Json.xml
+E:\projetdotnet\projetdotnet\bin\EntityFramework.xml
+E:\projetdotnet\projetdotnet\bin\EntityFramework.SqlServer.xml
+E:\projetdotnet\projetdotnet\bin\Microsoft.AspNet.Identity.Core.xml
+E:\projetdotnet\projetdotnet\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\projetdotnet\projetdotnet\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\projetdotnet\projetdotnet\bin\Microsoft.Owin.xml
+E:\projetdotnet\projetdotnet\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.xml
+E:\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.Facebook.xml
+E:\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.Cookies.xml
+E:\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.OAuth.xml
+E:\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.Google.xml
+E:\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.Twitter.xml
+E:\projetdotnet\projetdotnet\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\projetdotnet\projetdotnet\bin\Microsoft.ApplicationInsights.xml
+E:\projetdotnet\projetdotnet\bin\Microsoft.AI.DependencyCollector.xml
+E:\projetdotnet\projetdotnet\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\projetdotnet\projetdotnet\bin\Microsoft.AI.WindowsServer.xml
+E:\projetdotnet\projetdotnet\bin\Microsoft.AI.Web.xml
+E:\projetdotnet\projetdotnet\bin\fr\System.Web.Helpers.resources.dll
+E:\projetdotnet\projetdotnet\bin\fr\System.Web.Mvc.resources.dll
+E:\projetdotnet\projetdotnet\bin\fr\System.Web.Optimization.resources.dll
+E:\projetdotnet\projetdotnet\bin\fr\System.Web.Razor.resources.dll
+E:\projetdotnet\projetdotnet\bin\fr\System.Web.WebPages.resources.dll
+E:\projetdotnet\projetdotnet\bin\fr\System.Web.WebPages.Deployment.resources.dll
+E:\projetdotnet\projetdotnet\bin\fr\System.Web.WebPages.Razor.resources.dll
+E:\projetdotnet\projetdotnet\bin\fr\EntityFramework.resources.dll
+E:\projetdotnet\projetdotnet\bin\fr\EntityFramework.SqlServer.resources.dll
+E:\projetdotnet\projetdotnet\bin\fr\Microsoft.AspNet.Identity.Core.resources.dll
+E:\projetdotnet\projetdotnet\bin\fr\Microsoft.AspNet.Identity.Owin.resources.dll
+E:\projetdotnet\projetdotnet\bin\fr\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+E:\projetdotnet\projetdotnet\bin\fr\Microsoft.Owin.resources.dll
+E:\projetdotnet\projetdotnet\bin\fr\Microsoft.Owin.Host.SystemWeb.resources.dll
+E:\projetdotnet\projetdotnet\bin\fr\Microsoft.Owin.Security.resources.dll
+E:\projetdotnet\projetdotnet\bin\fr\Microsoft.Owin.Security.Facebook.resources.dll
+E:\projetdotnet\projetdotnet\bin\fr\Microsoft.Owin.Security.Google.resources.dll
+E:\projetdotnet\projetdotnet\bin\fr\Microsoft.Owin.Security.Twitter.resources.dll
+E:\projetdotnet\projetdotnet\bin\fr\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+E:\projetdotnet\projetdotnet\obj\Release\projetdotnet.csprojResolveAssemblyReference.cache
+E:\projetdotnet\projetdotnet\obj\Release\projetdotnet.Migrations.InitialCreate.resources
+E:\projetdotnet\projetdotnet\obj\Release\projetdotnet.Migrations.Initial.resources
+E:\projetdotnet\projetdotnet\obj\Release\projetdotnet.csproj.GenerateResource.Cache
+E:\projetdotnet\projetdotnet\obj\Release\projetdotnet.csproj.CoreCompileInputs.cache
+E:\projetdotnet\projetdotnet\obj\Release\projetdotnet.dll
+E:\projetdotnet\projetdotnet\obj\Release\projetdotnet.pdb
